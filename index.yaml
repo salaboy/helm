@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   fmtok8s-agenda-rest:
   - apiVersion: v2
-    created: "2021-07-02T10:44:46.264933+01:00"
+    created: "2021-07-02T10:46:12.038615+01:00"
     description: FMTOK8s Agenda Service (REST) Helm chart for Kubernetes
-    digest: dbe6ae52a27acfd51ac227ad7042a0e1f8f92fba1d7a313bd794e8ec1856164d
+    digest: 721e88c8eae573966958a1019e55d1c1c8de6cbf74a1c4aeaadc30d1ba8b13a5
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     name: fmtok8s-agenda-rest
     urls:
@@ -12,7 +12,7 @@ entries:
     version: 0.0.27
   fmtok8s-api-gateway:
   - apiVersion: v1
-    created: "2021-07-02T10:44:46.268812+01:00"
+    created: "2021-07-02T10:46:12.041289+01:00"
     description: A Helm chart for the API Gateway Component
     digest: 9bf086390989b34e4d75a3bf8e29d5ee986b296ef52aee9a21c816b15b289e56
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
@@ -21,9 +21,9 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-api-gateway-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v1
-    created: "2021-07-02T10:44:46.267983+01:00"
+    created: "2021-07-02T10:46:12.039667+01:00"
     description: A Helm chart for Kubernetes
-    digest: 7d6cc6fddf5544b904ba14531ab2685f1be96b2ce9c470429f50c0441644ff17
+    digest: 43afd712ae50a61a63918e3c1fdb98a3d2c35258974b4533831585da1c47a579
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
     name: fmtok8s-api-gateway
     urls:
@@ -31,8 +31,43 @@ entries:
     version: 0.0.213
   fmtok8s-app:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-07-02T10:46:12.048335+01:00"
+    dependencies:
+    - name: fmtok8s-api-gateway
+      repository: https://salaboy.github.io/helm
+      version: 0.1.0
+    - name: fmtok8s-agenda-rest
+      repository: https://salaboy.github.io/helm
+      version: 0.0.27
+    - name: fmtok8s-c4p-rest
+      repository: https://salaboy.github.io/helm
+      version: 0.0.45
+    - name: fmtok8s-email-rest
+      repository: https://salaboy.github.io/helm
+      version: 0.0.22
+    description: A Helm chart for a Conference Platform App
+    digest: 8a5deb1c6d8610f84219333ce3b15380a9df4614fb7dee7eb8a1f7fd7d85a37b
+    home: http://github.com/salaboy/from-monolith-to-k8s
+    icon: https://rawgit.com/jenkins-x/jenkins-x-platform/08df980/images/kubernetes.png
+    keywords:
+    - cloudnative
+    - example
+    - cd
+    - kubernetes
+    - tutorial
+    maintainers:
+    - email: salaboy@gmail.com
+      name: salaboy
+      url: http://salaboy.com
+    name: fmtok8s-app
+    type: application
+    urls:
+    - https://salaboy.github.io/helm/fmtok8s-app-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-02T10:44:46.272481+01:00"
+    created: "2021-07-02T10:46:12.045235+01:00"
     dependencies:
     - name: fmtok8s-api-gateway
       repository: http://jenkins-x-chartmuseum:8080
@@ -47,7 +82,7 @@ entries:
       repository: http://jenkins-x-chartmuseum:8080
       version: 0.0.22
     description: A Helm chart for a Conference Platform App
-    digest: 0b63b9ef52fc44ccff79d655cfb1fbee78d5673616e443af8243a367f0f04231
+    digest: 9975b0fe0dc91cefa13e3491f77f5b5e46701c3a6f1cdfb9bb480b6d487bb54a
     home: http://github.com/salaboy/from-monolith-to-k8s
     icon: https://rawgit.com/jenkins-x/jenkins-x-platform/08df980/images/kubernetes.png
     keywords:
@@ -67,9 +102,9 @@ entries:
     version: 0.0.134
   fmtok8s-c4p-rest:
   - apiVersion: v2
-    created: "2021-07-02T10:44:46.273248+01:00"
+    created: "2021-07-02T10:46:12.050682+01:00"
     description: FMTOK8S C4P Service (REST) Helm chart for Kubernetes
-    digest: 42b66d2ee0cf2fa2a8064b6f63b246ac9b9094d0b4066b8ede2078cde547d16f
+    digest: 1b0cf0248d64223bfb25f8afdb86365d6486669de3705ef487e547d56f617ca7
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     name: fmtok8s-c4p-rest
     urls:
@@ -77,12 +112,12 @@ entries:
     version: 0.0.45
   fmtok8s-email-rest:
   - apiVersion: v2
-    created: "2021-07-02T10:44:46.274003+01:00"
+    created: "2021-07-02T10:46:12.051574+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
-    digest: 60f5c1ff5b01227c6bf477944a91a80b46d70fb1ae7329f492cbe75e1edcf06c
+    digest: b4df91ec34452054e6a91a7ca253a81a85cb1c78efb77a6ae0a524e629fa0487
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     name: fmtok8s-email-rest
     urls:
     - https://salaboy.github.io/helm/fmtok8s-email-rest-0.0.22.tgz
     version: 0.0.22
-generated: "2021-07-02T10:44:46.263841+01:00"
+generated: "2021-07-02T10:46:12.037551+01:00"
