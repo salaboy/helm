@@ -4,6 +4,7 @@ To add this repository to your Helm installation run:
 
 ```
 helm repo add fmtok8s https://salaboy.github.io/helm/
+helm repo update
 ```
 
 In this repository you will find the following charts: 
