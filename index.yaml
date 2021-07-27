@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   fmtok8s-agenda-rest:
   - apiVersion: v2
-    created: "2021-07-23T13:26:13.121101+01:00"
+    created: "2021-07-27T12:29:04.111666+01:00"
     description: FMTOK8s Agenda Service (REST) Helm chart for Kubernetes
     digest: a08d42d90ad747f61c9702f8bbdfcd33e3ff0047fa15f629c9ae56adf8a2c07f
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
@@ -11,7 +11,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-agenda-rest-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
-    created: "2021-07-23T13:26:13.120509+01:00"
+    created: "2021-07-27T12:29:04.110613+01:00"
     description: FMTOK8s Agenda Service (REST) Helm chart for Kubernetes
     digest: 721e88c8eae573966958a1019e55d1c1c8de6cbf74a1c4aeaadc30d1ba8b13a5
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
@@ -21,7 +21,7 @@ entries:
     version: 0.0.27
   fmtok8s-api-gateway:
   - apiVersion: v1
-    created: "2021-07-23T13:26:13.122476+01:00"
+    created: "2021-07-27T12:29:04.113473+01:00"
     description: A Helm chart for the API Gateway Component
     digest: 9bf086390989b34e4d75a3bf8e29d5ee986b296ef52aee9a21c816b15b289e56
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
@@ -30,7 +30,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-api-gateway-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v1
-    created: "2021-07-23T13:26:13.121865+01:00"
+    created: "2021-07-27T12:29:04.112694+01:00"
     description: A Helm chart for Kubernetes
     digest: 43afd712ae50a61a63918e3c1fdb98a3d2c35258974b4533831585da1c47a579
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
@@ -41,7 +41,7 @@ entries:
   fmtok8s-app:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-07-23T13:26:13.129759+01:00"
+    created: "2021-07-27T12:29:04.119715+01:00"
     dependencies:
     - name: fmtok8s-api-gateway
       repository: https://salaboy.github.io/helm/
@@ -76,7 +76,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-07-23T13:26:13.12655+01:00"
+    created: "2021-07-27T12:29:04.117116+01:00"
     dependencies:
     - name: fmtok8s-api-gateway
       repository: http://jenkins-x-chartmuseum:8080
@@ -111,7 +111,7 @@ entries:
     version: 0.0.134
   fmtok8s-c4p-rest:
   - apiVersion: v2
-    created: "2021-07-23T13:26:13.130379+01:00"
+    created: "2021-07-27T12:29:04.120567+01:00"
     description: FMTOK8S C4P Service (REST) Helm chart for Kubernetes
     digest: 1b0cf0248d64223bfb25f8afdb86365d6486669de3705ef487e547d56f617ca7
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
@@ -121,7 +121,7 @@ entries:
     version: 0.0.45
   fmtok8s-email-rest:
   - apiVersion: v2
-    created: "2021-07-23T13:26:13.131005+01:00"
+    created: "2021-07-27T12:29:04.121568+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
     digest: b4df91ec34452054e6a91a7ca253a81a85cb1c78efb77a6ae0a524e629fa0487
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
@@ -129,4 +129,27 @@ entries:
     urls:
     - https://salaboy.github.io/helm/fmtok8s-email-rest-0.0.22.tgz
     version: 0.0.22
-generated: "2021-07-23T13:26:13.119752+01:00"
+  helm-chart-example:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2021-07-27T12:29:04.122499+01:00"
+    description: Example Helm Chart
+    digest: 8dedd2ab1ff6a28aabf2d0eb71ba054f73288d00fac247696650ca75dc981617
+    home: http://github.com/salaboy/helm-chart-example
+    icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
+    keywords:
+    - cloudnative
+    - example
+    - helm
+    - kubernetes
+    - tutorial
+    maintainers:
+    - email: salaboy@gmail.com
+      name: salaboy
+      url: http://salaboy.com
+    name: helm-chart-example
+    type: application
+    urls:
+    - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-07-27T12:29:04.109104+01:00"
