@@ -21,9 +21,9 @@ entries:
     version: 0.0.27
   fmtok8s-api-gateway:
   - apiVersion: v1
-    created: "2022-04-28T04:11:37.184846439Z"
+    created: "2022-04-28T04:20:59.466197838Z"
     description: A Helm chart for the API Gateway Component
-    digest: c0e02d0178b7098c58a24ccee14342c654d678d3b18e080cc4a483ff5fb67b22
+    digest: 371754b0bb4ac5fd2af00e6cebfa1e26f0002016010ac3fa5837cf6cc09a6157
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
     name: fmtok8s-api-gateway
     urls:
@@ -286,4 +286,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-04-28T04:11:37.184025927Z"
+generated: "2022-04-28T04:20:59.465337134Z"
