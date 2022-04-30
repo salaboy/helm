@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   fmtok8s-agenda-rest:
   - apiVersion: v2
-    created: "2022-04-29T06:52:57.030505057Z"
+    created: "2022-04-30T01:01:12.858794881Z"
     description: FMTOK8s Agenda Service (REST) Helm chart for Kubernetes
-    digest: a01632edbeb978a056eff0c36be53f95e2675730e7534aa58475cb7bee993967
+    digest: f3887fdeaffee71999c210589f1a502c8d992719ca5c24f9fe855fc0c616708d
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     name: fmtok8s-agenda-rest
     urls:
@@ -295,4 +295,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-04-29T06:52:57.028508628Z"
+generated: "2022-04-30T01:01:12.857437965Z"
