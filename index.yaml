@@ -192,9 +192,9 @@ entries:
     version: 0.0.45
   fmtok8s-email-rest:
   - apiVersion: v2
-    created: "2022-01-13T09:30:52.844272Z"
+    created: "2022-05-06T12:48:59.757204829Z"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
-    digest: f8c20f5c7f06d73a4383e7bd3670499ddc3697ead4756a25554103d55c185c8e
+    digest: e18d7b608b9ae40feb2cbb785940c0d0373613835bd6a70afc0c64bbdd2ab4f4
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     name: fmtok8s-email-rest
     urls:
@@ -295,4 +295,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-06T12:48:23.809281783Z"
+generated: "2022-05-06T12:48:59.755622551Z"
