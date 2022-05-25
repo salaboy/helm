@@ -202,9 +202,9 @@ entries:
     version: 0.0.45
   fmtok8s-c4p-service:
   - apiVersion: v2
-    created: "2022-05-25T08:24:27.839047484Z"
+    created: "2022-05-25T09:28:35.012537412Z"
     description: FMTOK8S C4P Service Helm chart for Kubernetes
-    digest: 0c7fe28d17210933f7278f5d7c0b2f33980a297b9fce0f8629877423581ec1d7
+    digest: 531c8cf2113a7ed8da306833612c8a527bb0a3afd0eb4aa23d0481ebf1be5bbd
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-c4p-service
     urls:
@@ -315,4 +315,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-25T08:24:27.838069263Z"
+generated: "2022-05-25T09:28:35.011707317Z"
