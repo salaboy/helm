@@ -123,9 +123,9 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-email-service-v0.0.23-test-3.tgz
     version: v0.0.23-test-3
   - apiVersion: v2
-    created: "2022-06-21T09:41:48.822541391Z"
+    created: "2022-06-22T06:32:05.267208316Z"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
-    digest: d6f6744eaca2b87a7f63ef38506fdaf5d11de7da33179b1242e5028df7411080
+    digest: 94fd7be07ffa9bd54edbbd46b40920d7ff69da95231b1271df7c1db7148f4493
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-email-service
     urls:
@@ -254,4 +254,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-22T06:31:55.161461248Z"
+generated: "2022-06-22T06:32:05.266157508Z"
