@@ -94,6 +94,42 @@ entries:
     urls:
     - https://salaboy.github.io/helm/fmtok8s-c4p-service-v0.0.1.tgz
     version: v0.0.1
+  fmtok8s-conference-chart:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-06-22T14:29:40.014960949Z"
+    dependencies:
+    - name: fmtok8s-frontend
+      repository: https://salaboy.github.io/helm/
+      version: v0.1.0
+    - name: fmtok8s-agenda-service
+      repository: https://salaboy.github.io/helm/
+      version: v0.1.0
+    - name: fmtok8s-c4p-service
+      repository: https://salaboy.github.io/helm/
+      version: v0.1.0
+    - name: fmtok8s-email-service
+      repository: https://salaboy.github.io/helm/
+      version: v0.1.0
+    description: A Helm chart for a Conference Platform App
+    digest: 364fa63a4874cea1d5bcb0bbeaeda77241086b50b03002e63f724c7c2d9a5b1c
+    home: http://github.com/salaboy/from-monolith-to-k8s
+    icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
+    keywords:
+    - cloudnative
+    - example
+    - cd
+    - kubernetes
+    - tutorial
+    maintainers:
+    - email: salaboy@gmail.com
+      name: salaboy
+      url: http://salaboy.com
+    name: fmtok8s-conference-chart
+    type: application
+    urls:
+    - https://salaboy.github.io/helm/fmtok8s-conference-chart-v0.0.1.tgz
+    version: v0.0.1
   fmtok8s-email-service:
   - apiVersion: v2
     created: "2022-06-22T09:36:53.513184305Z"
@@ -263,4 +299,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-22T09:36:53.51210659Z"
+generated: "2022-06-22T14:29:40.001737868Z"
