@@ -195,9 +195,9 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-frontend-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2022-06-24T16:28:33.129273122Z"
+    created: "2022-06-24T16:47:31.090222019Z"
     description: FMTOK8s Frontend Service Helm chart for Kubernetes
-    digest: 8c9a62907be85923c2d75bb4115a175ef01c78c1ab0ee3e78bbc104e49675481
+    digest: 149fd694d09621b467d9acb69ef32ba552886daa7ea6c497835ac51edf4fd2e1
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-frontend
     urls:
@@ -289,4 +289,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-24T16:28:33.12820003Z"
+generated: "2022-06-24T16:47:31.08963362Z"
