@@ -61,7 +61,7 @@ entries:
   fmtok8s-conference-chart:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-06-23T08:33:30.141975+01:00"
+    created: "2022-06-24T15:24:58.857185676Z"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -76,7 +76,7 @@ entries:
       repository: https://salaboy.github.io/helm/
       version: v0.1.0
     description: A Helm chart for a Conference Platform App
-    digest: b3974b2b263eb2cd035892e9fb7d16f6481bd44edcb05660b3d94e0812e89d79
+    digest: 7a92e4968a005a3936e764c7553424b86b89b1b22adeb18f64b59f26d01efce1
     home: http://github.com/salaboy/from-monolith-to-k8s
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     keywords:
@@ -289,4 +289,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-24T14:10:10.866732344Z"
+generated: "2022-06-24T15:24:58.843394021Z"
