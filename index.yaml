@@ -16,14 +16,14 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-agenda-service-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.10564+01:00"
+    created: "2022-06-26T13:34:03.899323934Z"
     dependencies:
     - condition: redis.enabled
       name: redis
       repository: https://charts.bitnami.com/bitnami
       version: 16.10.1
     description: FMTOK8s Agenda Service Helm chart for Kubernetes
-    digest: a0e3d7accfa44dfdf83423846a99fbb9029b5fb63a682c3c58b764091f0c9833
+    digest: 4ed20171d4200569f1c01337453b866e7d0e1e9b3392128acdf610101ba90eee
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-agenda-service
     urls:
@@ -333,4 +333,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-25T13:51:39.250090673Z"
+generated: "2022-06-26T13:34:03.891439539Z"
