@@ -131,7 +131,7 @@ entries:
     version: v0.1.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-06-26T18:26:55.045106711Z"
+    created: "2022-06-27T12:56:58.420479418Z"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -149,8 +149,12 @@ entries:
       name: kube-prometheus
       repository: https://charts.bitnami.com/bitnami
       version: 8.0.8
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://charts.bitnami.com/bitnami
+      version: 7.9.8
     description: A Helm chart for a Conference Platform App
-    digest: a69d27c4f11245fe50278b65a55bb75fb32f7408a5f650dc22440b4385444e8f
+    digest: afb95527de262db85fbcf3febb9ae063053e866e51ed256eea444d0ac65d720f
     home: http://github.com/salaboy/from-monolith-to-k8s
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     keywords:
@@ -337,4 +341,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-26T19:08:12.911099196Z"
+generated: "2022-06-27T12:56:58.377738744Z"
