@@ -131,7 +131,7 @@ entries:
     version: v0.1.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-07-10T13:01:40.719769762Z"
+    created: "2022-07-12T15:26:12.726621456Z"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -154,7 +154,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 2.6.4
     description: A Helm chart for a Conference Platform App
-    digest: d8cc62e9395a3f1d7e01525194c3284315e277785141a7c511491e6bb9273f64
+    digest: f6022110e57462f40f4ba97807a6748642996211be1bd13d4739aa9b724dca8c
     home: http://github.com/salaboy/from-monolith-to-k8s
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     keywords:
@@ -341,4 +341,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-10T13:01:40.681256149Z"
+generated: "2022-07-12T15:26:12.683181259Z"
