@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   fmtok8s-agenda-service:
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.110768+01:00"
+    created: "2022-10-17T13:37:13.892948+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -13,10 +13,10 @@ entries:
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-agenda-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-agenda-service-v0.1.0.tgz
+    - fmtok8s-agenda-service-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2022-06-30T19:28:56.932918183Z"
+    created: "2022-10-17T13:37:13.886476+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -27,11 +27,11 @@ entries:
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-agenda-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-agenda-service-v0.0.1.tgz
+    - fmtok8s-agenda-service-v0.0.1.tgz
     version: v0.0.1
   fmtok8s-c4p-service:
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.120186+01:00"
+    created: "2022-10-17T13:37:13.902018+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -42,10 +42,10 @@ entries:
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-c4p-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-c4p-service-v0.1.0.tgz
+    - fmtok8s-c4p-service-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2022-06-30T19:31:07.902265201Z"
+    created: "2022-10-17T13:37:13.897564+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -56,7 +56,7 @@ entries:
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-c4p-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-c4p-service-v0.0.1.tgz
+    - fmtok8s-c4p-service-v0.0.1.tgz
     version: v0.0.1
   fmtok8s-conference-chart:
   - apiVersion: v2
@@ -127,11 +127,11 @@ entries:
     name: fmtok8s-conference-chart
     type: application
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-conference-chart-v0.1.0.tgz
+    - fmtok8s-conference-chart-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-07-12T15:26:12.726621456Z"
+    created: "2022-10-17T13:37:13.912876+01:00"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -170,26 +170,26 @@ entries:
     name: fmtok8s-conference-chart
     type: application
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-conference-chart-v0.0.1.tgz
+    - fmtok8s-conference-chart-v0.0.1.tgz
     version: v0.0.1
   fmtok8s-email-service:
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.145612+01:00"
+    created: "2022-10-17T13:37:13.929401+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
     digest: f88f18d06705b28bc721380ff8b808b6c33a0333b286da380812d831dd31e02f
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-email-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-email-service-v0.2.0.tgz
+    - fmtok8s-email-service-v0.2.0.tgz
     version: v0.2.0
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.145139+01:00"
+    created: "2022-10-17T13:37:13.928446+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
     digest: 124dc94324b2b83d3632727612a7f76097f7f2cc01441ae4cc0c95bd446f56eb
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-email-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-email-service-v0.1.1.tgz
+    - fmtok8s-email-service-v0.1.1.tgz
     version: v0.1.1
   - apiVersion: v2
     created: "2022-06-25T11:02:03.794134539Z"
@@ -198,16 +198,16 @@ entries:
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-email-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-email-service-v0.1.0.tgz
+    - fmtok8s-email-service-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.144187+01:00"
+    created: "2022-10-17T13:37:13.926623+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
     digest: 397c66a320f766adaba771fe5aa754ea88a78e8a6824894b181eb2275b3f33b4
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
     name: fmtok8s-email-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-email-service-v0.0.23-test-3.tgz
+    - fmtok8s-email-service-v0.0.23-test-3.tgz
     version: v0.0.23-test-3
   - apiVersion: v2
     created: "2022-07-01T14:00:43.683062687Z"
@@ -216,16 +216,16 @@ entries:
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-email-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-email-service-v0.0.1.tgz
+    - fmtok8s-email-service-v0.0.1.tgz
     version: v0.0.1
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.142713+01:00"
+    created: "2022-10-17T13:37:13.924389+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
     digest: eb9234e2835ce92c7b1df48e42763749c27f2f9549d52f8c79deb8298828adb9
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-email-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-email-service-v0.0.1-native.tgz
+    - fmtok8s-email-service-v0.0.1-native.tgz
     version: v0.0.1-native
   fmtok8s-frontend:
   - apiVersion: v2
@@ -244,41 +244,41 @@ entries:
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-frontend
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-frontend-v0.1.0.tgz
+    - fmtok8s-frontend-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2022-07-03T14:29:28.745655375Z"
+    created: "2022-10-17T13:37:13.930165+01:00"
     description: FMTOK8s Frontend Service Helm chart for Kubernetes
     digest: 36209c2706a29d2b2cc661419d40fb5e253387dfaa3f178a59613f20676c029a
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-frontend
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-frontend-v0.0.1.tgz
+    - fmtok8s-frontend-v0.0.1.tgz
     version: v0.0.1
   fmtok8s-payments-service:
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.147597+01:00"
+    created: "2022-10-17T13:37:13.9322+01:00"
     description: 3rd Party Payment Service
     digest: 45260b5f4725ab935298b38a4bf2bcc266d5c1251a5af46cf91ff82720de6f7e
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
     name: fmtok8s-payments-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-payments-service-0.1.0.tgz
+    - fmtok8s-payments-service-0.1.0.tgz
     version: 0.1.0
   fmtok8s-queue-service:
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.148619+01:00"
+    created: "2022-10-17T13:37:13.933401+01:00"
     description: Queue Service for Tickets Application
     digest: 2ff573e8ed5cc5efd6f8983dcde53e1da06798ce89af1f593c4214d55700c84e
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
     name: fmtok8s-queue-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-queue-service-0.1.0.tgz
+    - fmtok8s-queue-service-0.1.0.tgz
     version: 0.1.0
   fmtok8s-tickets:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-06-23T08:33:30.151184+01:00"
+    created: "2022-10-17T13:37:13.935452+01:00"
     dependencies:
     - name: fmtok8s-payments-service
       repository: https://salaboy.github.io/helm/
@@ -306,22 +306,22 @@ entries:
     name: fmtok8s-tickets
     type: application
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-tickets-0.1.0.tgz
+    - fmtok8s-tickets-0.1.0.tgz
     version: 0.1.0
   fmtok8s-tickets-service:
   - apiVersion: v2
-    created: "2022-06-23T08:33:30.152314+01:00"
+    created: "2022-10-17T13:37:13.936604+01:00"
     description: Tickets Service Helm Chart
     digest: 972b9a11a2ab2f6adaa39173ac2cc7512b11deaf96a4c537df1838a289c6066e
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
     name: fmtok8s-tickets-service
     urls:
-    - https://salaboy.github.io/helm/fmtok8s-tickets-service-0.1.0.tgz
+    - fmtok8s-tickets-service-0.1.0.tgz
     version: 0.1.0
   helm-chart-example:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-06-23T08:33:30.153877+01:00"
+    created: "2022-10-17T13:37:13.938075+01:00"
     description: Example Helm Chart
     digest: 8dedd2ab1ff6a28aabf2d0eb71ba054f73288d00fac247696650ca75dc981617
     home: http://github.com/salaboy/helm-chart-example
@@ -339,6 +339,29 @@ entries:
     name: helm-chart-example
     type: application
     urls:
-    - https://salaboy.github.io/helm/helm-chart-example-0.1.0.tgz
+    - helm-chart-example-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-12T15:26:12.683181259Z"
+  rainbows-as-a-service:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-10-17T13:37:13.938439+01:00"
+    description: A Helm chart for the Rainbows as a Service App
+    digest: 598101c97e08a7560981cf0412bb8869d768eddcc081bc504b7b2ea09dd58076
+    home: http://github.com/salaboy/from-monolith-to-k8s
+    icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
+    keywords:
+    - cloudnative
+    - example
+    - kubecon
+    - kubernetes
+    - tutorial
+    maintainers:
+    - email: salaboy@gmail.com
+      name: salaboy
+      url: http://salaboy.com
+    name: rainbows-as-a-service
+    type: application
+    urls:
+    - rainbows-as-a-service-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-10-17T13:37:13.879881+01:00"
