@@ -59,14 +59,14 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-c4p-service-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2023-03-18T15:48:49.781269683Z"
+    created: "2023-03-18T15:50:28.475695932Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 11.6.6
     description: FMTOK8S C4P Service Helm chart for Kubernetes
-    digest: 8aca641de76fc2e511072d08a69847982826437c9cf15c6d977943d316975e35
+    digest: 0502b0ac0205ad0ece26266b964fa7abd72fbed59ad6b6b467cd4ab285167b0a
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     name: fmtok8s-c4p-service
     urls:
@@ -598,4 +598,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/weird-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-18T15:48:49.774903708Z"
+generated: "2023-03-18T15:50:28.469915041Z"
