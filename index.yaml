@@ -220,17 +220,17 @@ entries:
     version: v0.1.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-04-04T09:56:51.199309+01:00"
+    created: "2023-04-04T09:07:10.866024551Z"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
       version: v0.1.1
     - name: fmtok8s-agenda-service
       repository: https://salaboy.github.io/helm/
-      version: v0.1.0
+      version: v0.1.2
     - name: fmtok8s-c4p-service
       repository: https://salaboy.github.io/helm/
-      version: v0.1.0
+      version: v0.1.1
     - name: fmtok8s-email-service
       repository: https://salaboy.github.io/helm/
       version: v0.1.0
@@ -242,8 +242,12 @@ entries:
       name: grafana-operator
       repository: https://charts.bitnami.com/bitnami
       version: 2.6.4
-    description: A Helm chart for a Conference Platform App
-    digest: f6022110e57462f40f4ba97807a6748642996211be1bd13d4739aa9b724dca8c
+    - condition: loki.enabled
+      name: grafana-loki
+      repository: https://charts.bitnami.com/bitnami
+      version: 2.6.2
+    description: A Helm chart for the Conference App
+    digest: d03cf733713e2c12bf20018c007604707cfb98542fc577ab6156bc79c9c9432e
     home: http://github.com/salaboy/from-monolith-to-k8s
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
     keywords:
@@ -673,4 +677,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/weird-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-04T09:56:51.148047+01:00"
+generated: "2023-04-04T09:07:10.815688423Z"
