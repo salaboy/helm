@@ -3,7 +3,7 @@ entries:
   complex-app:
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2023-06-02T12:58:33.765847+01:00"
+    created: "2023-06-24T11:32:35.52487+01:00"
     description: A Helm chart for the Platform Complex Prototype App
     digest: 2f1e22773d79c79782178a36ee7d3656f62a006e489541d0c8a886e903da04ad
     home: http://github.com/salaboy/prototype-apps
@@ -23,9 +23,51 @@ entries:
     urls:
     - https://salaboy.github.io/helm/complex-app-v0.1.0.tgz
     version: v0.1.0
+  conference-app:
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2023-06-24T11:32:35.53834+01:00"
+    dependencies:
+    - condition: install.infrastructure
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 17.11.3
+    - condition: install.infrastructure
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.5.7
+    - condition: install.infrastructure
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 22.1.5
+    - condition: install.ingress
+      name: nginx-ingress-controller
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.7.2
+    description: A Helm chart for the Conference App
+    digest: 90d0dd2a97dad0cde7c122352132e2c4bd65704b6fbc086353208e0d02ba55bc
+    home: http://github.com/salaboy/platforms-on-k8s
+    icon: https://www.salaboy.com/content/images/2023/06/avatar-new.png
+    keywords:
+    - cloudnative
+    - platform-engineering
+    - platforms
+    - book
+    - kubernetes
+    - tutorial
+    - example
+    maintainers:
+    - email: salaboy@gmail.com
+      name: salaboy
+      url: http://salaboy.com
+    name: conference-app
+    type: application
+    urls:
+    - https://salaboy.github.io/helm/conference-app-v1.0.0.tgz
+    version: v1.0.0
   dapr-ambient:
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.766141+01:00"
+    created: "2023-06-24T11:32:35.53882+01:00"
     description: Helm Chart For Dapr Ambient Apps
     digest: 455f1fdb57673adf1564392232d048d14b998ddd4e5e5d8a98bc853ee4601bd6
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -35,7 +77,7 @@ entries:
     version: 1.10.0
   fmtok8s-agenda-service:
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.782305+01:00"
+    created: "2023-06-24T11:32:35.55413+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -49,7 +91,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-agenda-service-v0.1.2.tgz
     version: v0.1.2
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.778232+01:00"
+    created: "2023-06-24T11:32:35.550025+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -63,7 +105,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-agenda-service-v0.1.1.tgz
     version: v0.1.1
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.774747+01:00"
+    created: "2023-06-24T11:32:35.54666+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -77,7 +119,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-agenda-service-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.770048+01:00"
+    created: "2023-06-24T11:32:35.542565+01:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -92,7 +134,7 @@ entries:
     version: v0.0.1
   fmtok8s-c4p-service:
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.790989+01:00"
+    created: "2023-06-24T11:32:35.562563+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -106,7 +148,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-c4p-service-v0.1.1.tgz
     version: v0.1.1
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.788328+01:00"
+    created: "2023-06-24T11:32:35.559885+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -120,7 +162,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-c4p-service-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.785089+01:00"
+    created: "2023-06-24T11:32:35.55673+01:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -136,7 +178,7 @@ entries:
   fmtok8s-conference-chart:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.90774+01:00"
+    created: "2023-06-24T11:32:35.673593+01:00"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -183,7 +225,7 @@ entries:
     version: v0.1.4
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.882859+01:00"
+    created: "2023-06-24T11:32:35.649246+01:00"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -230,7 +272,7 @@ entries:
     version: v0.1.3
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.857788+01:00"
+    created: "2023-06-24T11:32:35.625453+01:00"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -277,7 +319,7 @@ entries:
     version: v0.1.2
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.831574+01:00"
+    created: "2023-06-24T11:32:35.601067+01:00"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -312,7 +354,7 @@ entries:
     version: v0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.82406+01:00"
+    created: "2023-06-24T11:32:35.594209+01:00"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -347,7 +389,7 @@ entries:
     version: v0.1.0
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.817307+01:00"
+    created: "2023-06-24T11:32:35.587852+01:00"
     dependencies:
     - name: fmtok8s-frontend
       repository: https://salaboy.github.io/helm/
@@ -394,7 +436,7 @@ entries:
     version: v0.0.1
   fmtok8s-email-service:
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.909716+01:00"
+    created: "2023-06-24T11:32:35.675292+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
     digest: f88f18d06705b28bc721380ff8b808b6c33a0333b286da380812d831dd31e02f
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -403,7 +445,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-email-service-v0.2.0.tgz
     version: v0.2.0
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.909408+01:00"
+    created: "2023-06-24T11:32:35.675075+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
     digest: 124dc94324b2b83d3632727612a7f76097f7f2cc01441ae4cc0c95bd446f56eb
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -412,7 +454,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-email-service-v0.1.1.tgz
     version: v0.1.1
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.909178+01:00"
+    created: "2023-06-24T11:32:35.674857+01:00"
     description: FMTOK8S Email Service Helm chart for Kubernetes
     digest: eb588094c5d1bdafc70cdee2754a7048cde016d8297aecb546c74bcdd53aec8a
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -421,7 +463,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-email-service-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.908932+01:00"
+    created: "2023-06-24T11:32:35.674611+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
     digest: 397c66a320f766adaba771fe5aa754ea88a78e8a6824894b181eb2275b3f33b4
     icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
@@ -430,7 +472,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-email-service-v0.0.23-test-3.tgz
     version: v0.0.23-test-3
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.90853+01:00"
+    created: "2023-06-24T11:32:35.674255+01:00"
     description: FMTOK8S Email Service Helm chart for Kubernetes
     digest: 930990c714ebb6642f0812eb9b794053401d4b6106d6c14ffed4acb998131861
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -439,7 +481,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-email-service-v0.0.1.tgz
     version: v0.0.1
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.908126+01:00"
+    created: "2023-06-24T11:32:35.673896+01:00"
     description: FMTOK8S Email Service (REST) Helm chart for Kubernetes
     digest: eb9234e2835ce92c7b1df48e42763749c27f2f9549d52f8c79deb8298828adb9
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -449,7 +491,7 @@ entries:
     version: v0.0.1-native
   fmtok8s-frontend:
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.91132+01:00"
+    created: "2023-06-24T11:32:35.676833+01:00"
     description: FMTOK8s Frontend Service Helm chart for Kubernetes
     digest: 52a28921f4da619a8786d42110b3038ed9a350c27a4b0ccc0051b995725963a6
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -458,7 +500,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-frontend-v0.1.3.tgz
     version: v0.1.3
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.911016+01:00"
+    created: "2023-06-24T11:32:35.676516+01:00"
     description: FMTOK8s Frontend Service Helm chart for Kubernetes
     digest: 0fc416e5ed7e3e6b812ba07f89bdbbd7c0a5fe9357cabd4aebbb49c4c4ee98e8
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -467,7 +509,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-frontend-v0.1.2.tgz
     version: v0.1.2
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.910663+01:00"
+    created: "2023-06-24T11:32:35.676192+01:00"
     description: FMTOK8s Frontend Service Helm chart for Kubernetes
     digest: 5ba66d2b7df5c8a733b22e8dadcd7bd08785ae6ae4ed5f78b236bd50f79d6180
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -476,7 +518,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-frontend-v0.1.1.tgz
     version: v0.1.1
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.910331+01:00"
+    created: "2023-06-24T11:32:35.675864+01:00"
     description: FMTOK8s Frontend Service Helm chart for Kubernetes
     digest: 6f22884b904bb231e9bc12e6065661614c3a6428150567944c5feaf95a3ac9f2
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -485,7 +527,7 @@ entries:
     - https://salaboy.github.io/helm/fmtok8s-frontend-v0.1.0.tgz
     version: v0.1.0
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.910118+01:00"
+    created: "2023-06-24T11:32:35.675634+01:00"
     description: FMTOK8s Frontend Service Helm chart for Kubernetes
     digest: 6fb8fdd8036e19a27d85a1ec88be9772da2255bf8d64876b77a0daf5168fba9f
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -495,7 +537,7 @@ entries:
     version: v0.0.1
   fmtok8s-payments-service:
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.911683+01:00"
+    created: "2023-06-24T11:32:35.677164+01:00"
     description: 3rd Party Payment Service
     digest: 45260b5f4725ab935298b38a4bf2bcc266d5c1251a5af46cf91ff82720de6f7e
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
@@ -505,7 +547,7 @@ entries:
     version: 0.1.0
   fmtok8s-queue-service:
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.912032+01:00"
+    created: "2023-06-24T11:32:35.677495+01:00"
     description: Queue Service for Tickets Application
     digest: 2ff573e8ed5cc5efd6f8983dcde53e1da06798ce89af1f593c4214d55700c84e
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
@@ -516,7 +558,7 @@ entries:
   fmtok8s-tickets:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.91292+01:00"
+    created: "2023-06-24T11:32:35.678345+01:00"
     dependencies:
     - name: fmtok8s-payments-service
       repository: https://salaboy.github.io/helm/
@@ -548,7 +590,7 @@ entries:
     version: 0.1.0
   fmtok8s-tickets-service:
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.913284+01:00"
+    created: "2023-06-24T11:32:35.678669+01:00"
     description: Tickets Service Helm Chart
     digest: 972b9a11a2ab2f6adaa39173ac2cc7512b11deaf96a4c537df1838a289c6066e
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/d273e09/images/nodejs.png
@@ -559,7 +601,7 @@ entries:
   helm-chart-example:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.913881+01:00"
+    created: "2023-06-24T11:32:35.679227+01:00"
     description: Example Helm Chart
     digest: 8dedd2ab1ff6a28aabf2d0eb71ba054f73288d00fac247696650ca75dc981617
     home: http://github.com/salaboy/helm-chart-example
@@ -581,7 +623,7 @@ entries:
     version: 0.1.0
   knative-helm-operator:
   - apiVersion: v2
-    created: "2023-06-02T12:58:33.91534+01:00"
+    created: "2023-06-24T11:32:35.680706+01:00"
     description: Helm Chart Knative Operator
     digest: ff98d9bd1e2c80bb7b7dde3b5cd184f1386fd80bd71fb78842291ab46bbc1919
     icon: https://salaboy.files.wordpress.com/2019/07/avatar.png
@@ -592,7 +634,7 @@ entries:
   kubeday-japan-app:
   - apiVersion: v2
     appVersion: v0.1.1
-    created: "2023-06-02T12:58:33.921872+01:00"
+    created: "2023-06-24T11:32:35.687069+01:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -618,7 +660,7 @@ entries:
     version: v0.1.1
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2023-06-02T12:58:33.918723+01:00"
+    created: "2023-06-24T11:32:35.683931+01:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -645,7 +687,7 @@ entries:
   proto-app:
   - apiVersion: v2
     appVersion: v0.1.1
-    created: "2023-06-02T12:58:33.922534+01:00"
+    created: "2023-06-24T11:32:35.6876+01:00"
     description: A Helm chart for the Platform Prototype App
     digest: c4ac9e540040049df87b474b256e604231a40ce891638b01170930fda9b6bbda
     home: http://github.com/salaboy/prototype-apps
@@ -667,7 +709,7 @@ entries:
     version: v0.1.1
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2023-06-02T12:58:33.922261+01:00"
+    created: "2023-06-24T11:32:35.68736+01:00"
     description: A Helm chart for the Platform Prototype App
     digest: 651bdcde47c5414016af045a6adc6bb21f3609a3e5485fdf0fae19d9c8f5e201
     home: http://github.com/salaboy/prototype-apps
@@ -690,7 +732,7 @@ entries:
   rainbows-as-a-service:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.922693+01:00"
+    created: "2023-06-24T11:32:35.687718+01:00"
     description: A Helm chart for the Rainbows as a Service App
     digest: d8c8bcdf31b864aea768c8c55f67cce9fa33125f517c7c2b0610ddc8bb8ba1a8
     home: http://github.com/salaboy/from-monolith-to-k8s
@@ -713,7 +755,7 @@ entries:
   rejekts-app:
   - apiVersion: v2
     appVersion: v0.2.3
-    created: "2023-06-02T12:58:33.924027+01:00"
+    created: "2023-06-24T11:32:35.688878+01:00"
     description: A Helm chart for the Rejekts EU application
     digest: 4a5ed8c49049cf61649bbb820aa84835bcc44fceb613dcf53d30df267ef0cffc
     home: http://github.com/salaboy/rejekts-eu-2023
@@ -735,7 +777,7 @@ entries:
     version: v0.2.3
   - apiVersion: v2
     appVersion: v0.2.2
-    created: "2023-06-02T12:58:33.923773+01:00"
+    created: "2023-06-24T11:32:35.688652+01:00"
     description: A Helm chart for the Rejekts EU application
     digest: 5ed1574902591c83817df7034b4f5b515b24ac414a68b2ea1442747506e84414
     home: http://github.com/salaboy/rejekts-eu-2023
@@ -757,7 +799,7 @@ entries:
     version: v0.2.2
   - apiVersion: v2
     appVersion: v0.2.1
-    created: "2023-06-02T12:58:33.923511+01:00"
+    created: "2023-06-24T11:32:35.688429+01:00"
     description: A Helm chart for the Rejekts EU application
     digest: fa651177909ebd9211a59c22db997cc39237f7a0e9d1a89ac69ac7b55623c85e
     home: http://github.com/salaboy/rejekts-eu-2023
@@ -779,7 +821,7 @@ entries:
     version: v0.2.1
   - apiVersion: v2
     appVersion: v0.2.0
-    created: "2023-06-02T12:58:33.92322+01:00"
+    created: "2023-06-24T11:32:35.688161+01:00"
     description: A Helm chart for the Rejekts EU application
     digest: 00379c40bac8840aac9c8906be0e0bd27534eedb0a1a6b1c6359144ea66afa9d
     home: http://github.com/salaboy/rejekts-eu-2023
@@ -801,7 +843,7 @@ entries:
     version: v0.2.0
   - apiVersion: v2
     appVersion: v0.1.0
-    created: "2023-06-02T12:58:33.922969+01:00"
+    created: "2023-06-24T11:32:35.687943+01:00"
     description: A Helm chart for the Rejekts EU application
     digest: df10e53f8255a4454010aef9a9fd78b5b9757590b78f8f333420a348c06e6d20
     home: http://github.com/salaboy/rejekts-eu-2023
@@ -824,7 +866,7 @@ entries:
   weird:
   - apiVersion: v2
     appVersion: 0.1.5
-    created: "2023-06-02T12:58:33.94462+01:00"
+    created: "2023-06-24T11:32:35.70933+01:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -850,7 +892,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.4
-    created: "2023-06-02T12:58:33.941441+01:00"
+    created: "2023-06-24T11:32:35.706024+01:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -876,7 +918,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 0.1.3
-    created: "2023-06-02T12:58:33.937608+01:00"
+    created: "2023-06-24T11:32:35.702838+01:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -902,7 +944,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 0.1.2
-    created: "2023-06-02T12:58:33.93447+01:00"
+    created: "2023-06-24T11:32:35.699248+01:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -928,7 +970,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.1
-    created: "2023-06-02T12:58:33.930893+01:00"
+    created: "2023-06-24T11:32:35.696009+01:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -954,7 +996,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-06-02T12:58:33.927697+01:00"
+    created: "2023-06-24T11:32:35.692424+01:00"
     dependencies:
     - name: redis
       repository: https://charts.bitnami.com/bitnami
@@ -978,4 +1020,4 @@ entries:
     urls:
     - https://salaboy.github.io/helm/weird-0.1.0.tgz
     version: 0.1.0
-generated: "2023-06-02T12:58:33.765374+01:00"
+generated: "2023-06-24T11:32:35.52444+01:00"
